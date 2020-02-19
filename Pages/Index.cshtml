@@ -1,0 +1,31 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+    <br />
+    <div class="text-center">
+        <h1 class="display-4">Welcome</h1>
+        <img src="~/images/draw.jpg" alt="ASP.NET" class="d-block w-100 h-75 img-responsive" />
+        <p>
+            Test Page Developed for testing.
+        </p>
+    </div>
+    <br />
+    <br />
+    <br />
+
+    <div class="row">
+        <div class="col-md-3">
+            <h2>Application uses</h2>
+            <ul>
+                <li><a href="/.auth/login/aad">Log in with Azure AD</a></li>
+                <li><a href="/.auth/login/microsoftaccount">Log in with Microsoft Account</a></li>
+                <li><a href="/.auth/login/facebook">Log in with Facebook</a></li>
+                <li><a href="/.auth/login/google">Log in with Google</a></li>
+                <li><a href="/.auth/login/twitter">Log in with Twitter</a></li>
+                <li>Theming using <a href="https://go.microsoft.com/fwlink/?LinkID=398939">Bootstrap</a></li>
+            </ul>
+        </div>
+
+    </div>

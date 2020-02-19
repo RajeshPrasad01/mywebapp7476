@@ -1,0 +1,103 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1 shrink-to-fit=no" />
+        <title>@ViewData["Title"] - myWebApp7475</title>
+
+        <environment>
+            <!-- Bootstrap CSS -->
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+            <!-- <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />  -->
+            <!--    <link rel="stylesheet" href="~/css/site.css" />  -->
+        </environment>
+
+    </head>
+    <body>
+
+        <!-- Just an image -->
+        <nav class="navbar navbar-light bg-light">
+            <a class="navbar-brand" href="Index">
+                <img src="~/Images/HeartV1.png" width="70" height="40" alt="">
+                <span class="navbar-brand mb-0 h1">myWebApp7475</span>
+            </a>
+        </nav>
+
+        <nav class="navbar nav-pills navbar-expand-lg navbar-light bg-light">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="nav justify-content-center">
+                    <li class="nav-item  active">
+                        <a class="nav-link" href="/Index">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Terms">Terms</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Quotes">Quotes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/SQLPage">SQLPages</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Item/Index">CosmosDBPage</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/SwaggerPage">WebApi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Albums">MySql Page</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Images">Images</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/KeyVault">KeyVault</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/SignalRChat">Signal R Chat</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Privacy">Privacy</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#">Disabled</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://mywebapp7475free.azurewebsites.net/.auth/logout"> Sign out</a>
+                    </li>
+
+                </ul>
+            </div>
+
+
+            <form class="form-inline align-content-end">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </nav>
+
+
+        <partial name="_CookieConsentPartial" />
+
+        <div class="container body-content">
+            @RenderBody()
+            <hr />
+            <footer>
+                <p>&copy; 2019 - myWebApp7475</p>
+            </footer>
+        </div>
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    </body>
+</html>

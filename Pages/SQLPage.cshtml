@@ -1,0 +1,111 @@
+﻿@page
+@model myWebApp7475.Pages.SQLPageModel
+@{
+    ViewData["Title"] = "SQLPage";
+}
+    <br />
+    <br />
+<h1>SQLPage</h1>
+<h3>Adventure Works Data</h3>
+<br />
+<br />
+<div>
+    <table class="table table-hover table-responsive ">
+        <thead class="thead-light">
+            <tr>
+                <th>
+                    First Name
+                </th>
+                <th>
+                    Middle Name
+                </th>
+                <th>
+                    Last Name
+                </th>
+                <th>
+                    National ID Number
+                </th>
+                <th>
+                    Login ID
+                </th>
+                <th>
+                    Birth Date
+                </th>
+                <th>
+                    Marital Status
+                </th>
+                <th>
+                    Gender
+                </th>
+                <th>
+                    Hire Date
+                </th>
+                <th>
+                    Address Line 1
+                </th>
+                <th>
+                    Postal Code
+                </th>
+                <th>
+                    Spatial Location
+                </th>
+                <th>
+                    E-Mail Address
+                </th>
+                <th>
+                    Phone Number
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var courseAndModule in Model.CoursesAndModules)
+            {
+            <tr>
+                <td>
+                    @Html.DisplayFor(courseName => courseAndModule.Fn)
+                </td>
+                <td>
+                    @Html.DisplayFor(moduleTitle => courseAndModule.Mn)
+                </td>
+                <td>
+                    @Html.DisplayFor(sequence => courseAndModule.Ln)
+                </td>
+                <td>
+                    @Html.DisplayFor(sequence => courseAndModule.NationalIDNumber)
+                </td>
+                <td>
+                    @Html.DisplayFor(sequence => courseAndModule.LoginID)
+                </td>
+                <td>
+                    @Html.DisplayFor(sequence => courseAndModule.JobTitle)
+                </td>
+                <td>
+                    @Html.DisplayFor(sequence => courseAndModule.BirthDate)
+                </td>
+                <td>
+                    @Html.DisplayFor(sequence => courseAndModule.Gender)
+                </td>
+                <td>
+                    @Html.DisplayFor(sequence => courseAndModule.HireDate)
+                </td>
+                <td>
+                    @Html.DisplayFor(sequence => courseAndModule.Al)
+                </td>
+                <td>
+                    @Html.DisplayFor(sequence => courseAndModule.City)
+                </td>
+                <td>
+                    @Html.DisplayFor(sequence => courseAndModule.Pc)
+                </td>
+                <td>
+                    @Html.DisplayFor(sequence => courseAndModule.Ea)
+                </td>
+                <td>
+                    @Html.DisplayFor(sequence => courseAndModule.Pn)
+                </td>
+            </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
